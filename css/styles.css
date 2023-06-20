@@ -145,7 +145,12 @@
   .menu-item{
       padding: 24px 0;
   }
-  
+
+  .tel-header{
+    font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+  }
   
   .menu-link{
   font-family: 'Roboto', sans-serif;
@@ -207,15 +212,30 @@
   .header-link{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 24px; */
   letter-spacing: 0.02em;
   color: #434455;
   padding: 24px 0;
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
+  .tel-link{
+    font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+  }
+
+  .tel-link:focus{
+    color: #4D5AE5;
+  }
+
+  .male-link{
+    font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+  }
   
   .main-page-hero{
   font-family: 'Roboto', sans-serif;
@@ -547,6 +567,7 @@
       justify-content: center;
       gap: 24px;
       margin-top: 8px;
+      margin-bottom: 40px;
   }
   
   .social-list-item{
@@ -1054,7 +1075,17 @@ height: 22px;
 
 .menu-active-item {
     color: #404BBF;
+    font-weight: 700;
+font-size: 36px;
+line-height: 40px;
 }
+.menu-inactive-item{
+    font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+}
+
+
   
    @media screen and (min-width: 430px){
        .menu-button{
@@ -1087,10 +1118,22 @@ height: 22px;
        .list-sec-second {
            flex-direction: column;
        }
+       /* .list-item-sec-second{
+        flex-basis: calc((100% - 3 * 24px) / 4);
+        margin-bottom: 72px;
+       } */
+
+       .list-item-sec-second:last-child{
+        flex-basis: calc((100% - 3 * 24px) / 4);
+        margin-bottom: 0px;
+       }
+
        .list-item-sec-second {
            display: flex;
            flex-direction: column;
            align-items: center;
+           flex-basis: calc((100% - 3 * 24px) / 4);
+        margin-bottom: 72px;
        }
        .small-tittle {
            font-size: 36px;
@@ -1131,6 +1174,7 @@ height: 22px;
        }
        .logo-wrapper {
            margin: 0;
+           margin-bottom: 72px;
        }
        .social-container {
            display: flex;
@@ -1162,9 +1206,12 @@ height: 22px;
            right: 10px;
        }
 
-       .logotype {
+       .logotype{
            margin: 0 0 16px 0;
            justify-content: center;
+       }
+       .social-list-modal{
+        gap: 56px;
        }
    }
   
