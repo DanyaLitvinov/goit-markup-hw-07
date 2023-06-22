@@ -1085,14 +1085,24 @@ font-size: 36px;
 line-height: 40px;
 }
 
-
   
    @media screen and (min-width: 430px){
        .menu-button{
            display: none;
        }
    }
-  
+   
+   /* @media screen and (min-width: 430px) and (max-width: 768px) {
+    .list{
+    display: block;
+    flex-wrap: wrap;
+    gap: 40px;
+    }
+    .sec-main {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg\ tablet.png);
+    }
+   }
+   */
    @media screen and (max-width: 1158px)  {
        .container {
            width: 100%;
@@ -1102,13 +1112,8 @@ line-height: 40px;
        }
    }
   
-   @media screen and (min-width: 320px) and (max-width: 430px){
-       .list{
-           display: none;
-       }
-       .main-address {
-           display: none;
-       }
+   @media screen and (min-width: 320px) and (max-width: 768px){
+       
        .main-header {
            height: 70px;
        }
@@ -1180,6 +1185,7 @@ line-height: 40px;
            display: flex;
            align-items: center;
            flex-direction: column;
+           margin-bottom: 72px;
        }
        .footer-sub-desc {
            text-align: center;
@@ -1194,9 +1200,7 @@ line-height: 40px;
            width: 165px;
            margin: 0 auto;
        }
-       .sec-main {
-           background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg.png);
-       }
+    
        .modal {
            width: 95%;
        }
@@ -1211,7 +1215,9 @@ line-height: 40px;
            justify-content: center;
        }
        .social-list-modal{
-        gap: 56px;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 24px;
        }
    }
   
@@ -1221,3 +1227,56 @@ line-height: 40px;
           display: none;
       }
   }
+
+
+  @media screen and (min-width:320px) and (max-width:430px) {
+    .list{
+        display: none;
+    }
+    .main-address {
+        display: none;
+    }
+  }
+
+  @media screen and (min-width:480px) and (max-width:768px) {
+   .modal{
+    width: 54%;
+   }
+   .list{
+    display: block;
+   }
+   .menu{
+display: flex;
+margin-left: 105px;
+
+   }
+
+  .header-link{
+    font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+  }
+  .menu-item{
+    padding: 12px;
+  }
+
+  /* .list-last-sec{
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
+  } */
+
+ .list-sec-second{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+    .customer-list-item {
+        width: calc((100% - 60px) / 3);
+      }
+
+      .team-sec > .container,
+  .sec-customer > .container {
+    max-width: 660px;
+  }
+ }
