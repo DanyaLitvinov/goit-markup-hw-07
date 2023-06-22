@@ -1211,13 +1211,15 @@ line-height: 40px;
        }
 
        .logotype{
-           margin: 0 0 16px 0;
            justify-content: center;
        }
        .social-list-modal{
         width: 100%;
         justify-content: space-between;
         padding-right: 24px;
+       }
+       .logotype-footer{
+        margin: 0 0 16px 0;
        }
    }
   
@@ -1247,7 +1249,6 @@ line-height: 40px;
    }
    .menu{
 display: flex;
-margin-left: 105px;
 
    }
 
@@ -1260,11 +1261,11 @@ line-height: 14px;
     padding: 12px;
   }
 
-  /* .list-last-sec{
-    justify-content: center;
+  .list-last-sec{
+    justify-content: space-between;
     column-gap: 24px;
     row-gap: 64px;
-  } */
+  }
 
  .list-sec-second{
     display: flex;
