@@ -27,7 +27,20 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 1157px) {
-    
+    .small-tittle {
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 700;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+    }
+    .small-tittle-text{
+        font-size: 16px;
+font-family: Roboto, sans-serif;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.32px;
+    }
     .desktop {
         display: none;
     }
@@ -58,10 +71,7 @@
         /* margin-bottom: 72px; */
     }
 /* markup */
-    .small-tittle {
-        font-size: 36px;
-        line-height: 40px;
-    }
+    
 
     .second-sec-main {
         padding: 96px 0;
@@ -129,6 +139,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+    .container-adaptive-advantages{
+        max-width: 768px;
+    }
     .container-adaptive-customer{
         width: 586px;
     }
@@ -233,8 +246,8 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px){
-    .container-adaptive{
-        max-width: 426px;
+    .container-adaptive-advantages{
+        max-width: 428px;
     }
     .list {
         display: none;
@@ -288,6 +301,7 @@
     }
     .sec-main {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_mobile.png);
+        padding:  112px 15px;
     }
     .list-last-sec {
        align-items: center;
