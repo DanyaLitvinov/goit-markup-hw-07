@@ -118,7 +118,7 @@ letter-spacing: 0.32px;
 
     .logotype {
         justify-content: center;
-        margin: 0 25px 0 0;
+        margin: 0 25px 0 1px;
     }
 
     .social-list-modal {
@@ -146,10 +146,10 @@ letter-spacing: 0.32px;
         width: 586px;
     }
     .main-page-hero{
-        margin: -74px auto 48px auto;
+        margin: 2px auto 40px auto;
     }
     .sec-main{
-        height: 436px;
+        padding: 112px 0;
     }
     .small-tittle {
         font-size: 36px;
@@ -193,7 +193,6 @@ letter-spacing: 0.32px;
 
     .menu {
         flex-wrap: nowrap;
-        gap: 25px;
     }
 
     .header-link {
